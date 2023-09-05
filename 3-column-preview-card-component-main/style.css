@@ -1,0 +1,126 @@
+:root {
+    --orange-bright: hsl(31, 77%, 52%);
+    --cyan-dark: hsl(184, 100%, 22%);
+    --cyan-darker: hsl(179, 100%, 13%);
+    --bg-color: hsl(0, 0%, 95%);
+    --color-font-primary: hsl(0, 0%, 100%, 0.75);
+    --font-lexend-deca: "Lexend Deca";
+    --font-big-shoulders-display: "Big Shoulders Display";
+}
+
+.preview-card-component {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.preview-cards {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.preview-card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: var(--color-font-primary);
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(1) {
+    background-color: var(--orange-bright);
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(2) {
+    background-color: var(--cyan-dark);
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(3) {
+    background-color: var(--cyan-darker);
+}
+
+.preview-card-title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.preview-card-description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.preview-card-description p {
+    line-height: 25px;
+}
+
+.preview-card-btn {
+    margin-top: 70px;
+}
+
+.preview-card-btn button {
+    padding: 12px 15px;
+    width: 150px;
+    border: 1px solid var(--color-font-primary);
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(1)
+.preview-card-btn button {
+    color: var(--orange-bright);
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(2)
+.preview-card-btn button {
+    color: var(--cyan-dark);
+}
+
+.preview-card-component
+.preview-cards 
+.preview-card:nth-child(3)
+.preview-card-btn button {
+    color: var(--cyan-darker);
+}
+
+.preview-card-btn button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--bg-color) !important;
+}
+
+@media (max-width: 800px) {
+    .preview-card-component {
+        height: auto;
+    }
+
+    .preview-cards {
+        width: 375px;
+        flex-direction: column;
+    }
+
+    .preview-card-btn {
+        margin-top: 10px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
