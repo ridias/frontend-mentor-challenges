@@ -4,8 +4,6 @@
     --cyan-darker: hsl(179, 100%, 13%);
     --bg-color: hsl(0, 0%, 95%);
     --color-font-primary: hsl(0, 0%, 100%, 0.75);
-    --font-lexend-deca: "Lexend Deca";
-    --font-big-shoulders-display: "Big Shoulders Display";
 }
 
 .preview-card-component {
@@ -121,6 +119,4 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
