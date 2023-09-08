@@ -1,0 +1,189 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta-soft: hsl(300, 69%, 71%);
+    --open-sans: "Open Sans";
+    --poppins: "Poppins";    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--violet);
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+}
+
+.huddle-landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+.huddle-landing-header {
+    width: 100%;
+    display: flex;
+}
+
+.huddle-landing-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 6;
+    margin-top: 75px;
+}
+
+.huddle-landing-main-img {
+    width: 100%;
+    display: flex;
+}
+
+.huddle-landing-main-content {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+.huddle-landing-main-content-title {
+    margin-top: 40px;
+    font-weight: 600;
+    font-family: var(--poppins), sans-serif;
+    color: #FAFAFA;
+    width: 600px;
+    font-size: 48px;
+}
+
+.huddle-landing-main-content-text {
+    font-weight: 600;
+    font-family: var(--open-sans), sans-serif;
+    color: #FAFAFA;
+    width: 550px;
+    margin-top: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.huddle-landing-main-content-btn {
+    margin-top: 60px;
+}
+
+.huddle-landing-main-content-btn button {
+    width: 200px;
+    padding: 15px 20px;
+    background-color: #FAFAFA;
+    color: var(--violet);
+    font-family: var(--poppins);
+    border-radius: 30px;
+    border: 1px solid #FAFAFA;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.huddle-landing-main-content-btn button:hover {
+    background-color: var(--magenta-soft);
+    border: 1px solid var(--magenta-soft);
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.huddle-landing-footer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.huddle-landing-footer-icons {
+    display: flex;
+}
+
+.huddle-landing-footer-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #FAFAFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.huddle-landing-footer-icon i {
+    font-size: 24px;
+    color: #FAFAFA;
+}
+
+.huddle-landing-footer-icon:hover {
+    border: 2px solid var(--magenta-soft);
+    cursor: pointer;
+}
+
+.huddle-landing-footer-icon:hover i {
+    color: var(--magenta-soft);
+} 
+
+@media (max-width: 800px){
+    .huddle-landing-page {
+        padding: 40px;
+        overflow-x: hidden;
+    }
+
+    .huddle-landing-main {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+    .huddle-landing-main-img {
+        width: 380px;
+        height: 300px;
+    }
+
+    .huddle-landing-main-img img {
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    .huddle-landing-main-content {
+        width: 100%;
+        padding-left: 0px;
+        align-items: center;
+        height: 400px;
+    }
+
+    .huddle-landing-main-content-title {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .huddle-landing-main-content-text {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .huddle-landing-footer {
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .huddle-landing-footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .huddle-landing-footer-icon i {
+        font-size: 16px;
+    }
+}
