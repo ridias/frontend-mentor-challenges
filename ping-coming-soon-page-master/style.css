@@ -1,0 +1,202 @@
+:root {
+    --blue-pale: hsl(223, 100%, 88%);
+    --red-light: hsl(354, 100%, 66%);
+    --color-btn: #4D7BF3;
+    --color-btn-hover: #6e94f6;
+    --gray: hsl(0, 0%, 59%);
+    --blue-very-dark: hsl(209, 33%, 12%);
+    --libre-frankling: "Libre Franklin";
+    --font-size: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ping-coming-soon-page {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.ping-coming-soon-logo {
+    width: 100px;
+    height: 30px;
+    background-image: url('images/logo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ping-coming-soon-title {
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: var(--libre-frankling), sans-serif;
+    color: var(--gray);
+    letter-spacing: 1px;
+}
+
+.ping-coming-soon-title span {
+    color: var(--blue-very-dark);
+    font-weight: 700;
+}
+
+.ping-coming-soon-subtitle {
+    margin-top: 20px;
+    color: var(--blue-very-dark);
+    font-family: var(--libre-frankling), sans-serif;
+}
+
+.ping-coming-soon-form {
+    margin-top: 40px;
+    display: flex;
+}
+
+.ping-coming-soon-form input[type="email"] {
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--blue-pale);
+    font-family: var(--libre-frankling);
+    margin-right: 15px;
+    outline: none;
+}
+
+.ping-coming-soon-form input[type="email"]:invalid {
+    outline: var(--red-light);
+}
+
+.ping-coming-soon-form input[type="email"]::placeholder {
+    color: var(--gray);
+    font-family: var(--libre-frankling);
+}
+
+.ping-coming-soon-form button {
+    width: 160px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: var(--color-btn);
+    border: 1px solid var(--color-btn);
+    color: #FAFAFA;
+    font-family: var(--libre-frankling);
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ping-coming-soon-form button:hover {
+    cursor: pointer;
+    background-color: var(--color-btn-hover);
+    border: 1px solid var(--color-btn-hover);
+}
+
+.ping-coming-soon-img {
+    margin-top: 60px;
+    width: 580px;
+    height: 350px;
+    background-image: url('images/illustration-dashboard.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.ping-coming-soon-footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ping-coming-soon-footer-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ping-coming-soon-footer-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--blue-pale);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0px 5px 0px 5px;
+}
+
+.ping-coming-soon-footer-icon:hover {
+    border: 1px solid var(--color-btn);
+    background-color: var(--color-btn);
+    cursor: pointer;
+}
+
+.ping-coming-soon-footer-icon i {
+    color: var(--color-btn);
+    font-size: 20px;
+}
+
+.ping-coming-soon-footer-icon:hover i {
+    color: #FAFAFA;
+}
+
+.ping-coming-soon-footer-copyright {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--libre-frankling), sans-serif;
+}
+
+@media (max-width: 800px) {
+
+    .ping-coming-soon-page {
+        padding: 50px;
+    }
+
+    .ping-coming-soon-title {
+        font-size: 30px;
+    }
+
+    .ping-coming-soon-subtitle {
+        font-size: 16px;
+    }
+    
+    .ping-coming-soon-form {
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .ping-coming-soon-form input[type="email"] {
+        width: 310px;
+        margin-bottom: 10px;
+        
+    }
+
+    .ping-coming-soon-form button {
+        width: 350px; 
+    }
+
+    .ping-coming-soon-img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .ping-coming-soon-footer {
+        margin-top: 100px;
+    }
+
+
+}
