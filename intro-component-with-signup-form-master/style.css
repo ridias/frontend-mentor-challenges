@@ -1,0 +1,198 @@
+:root {
+    --red: #ff7a7a;
+    --green: #38cc8c;
+    --green-light: rgb(94, 215, 163);
+    --blue: #6055a5;
+    --blue-dark: #3e3c49;
+    --blue-grayish: #b9b6d3;
+    --poppins: "Poppins";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--red);
+    background-image: url('images/bg-intro-mobile.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-component-signup {
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.intro-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.intro-component-title {
+    font-size: 48px;
+    color: #FAFAFA;
+    font-weight: 600;
+    line-height: 50px;
+    font-family: var(--poppins), sans-serif;
+}
+
+.intro-component-text {
+    margin-top: 20px;
+    color: #FAFAFA;
+    font-family: var(--poppins), sans-serif;
+}
+
+.intro-component-signup-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-component-signup-form-div {
+    height: 80px;
+    display: flex;
+}
+
+.intro-component-signup-form-div div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    color: #FAFAFA;
+    font-family: var(--poppins), sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.intro-component-signup-form-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+}
+
+.intro-component-signup-form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    margin-top: 20px;
+    font-family: var(--poppins), sans-serif;
+}
+
+.intro-component-signup-form-field-input {
+    width: 100%;
+    display: flex;
+    font-family: var(--poppins), sans-serif;
+}
+
+.intro-component-signup-form-field-input input {
+    width: 100%;
+    height: 35px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 1px solid var(--blue-grayish);
+    margin-bottom: 10px;
+}
+
+.intro-component-signup-form-field-input input:focus {
+    outline: 1px solid var(--blue-dark);
+}
+
+.intro-component-signup-form-field .field-error {
+    font-size: 12px;
+    color: var(--red);
+    font-style: italic;
+    font-weight: 600;
+    display: none;
+}
+
+.field-error.show {
+    display: block;
+}
+
+.intro-component-signup-form-btn {
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--poppins), sans-serif;
+    background-color: var(--green);
+    color: #FAFAFA;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.intro-component-signup-form-btn:hover {
+    background-color: var(--green-light);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.intro-component-signup-form-terms {
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: var(--poppins), sans-serif;
+    color: var(--blue-grayish);
+}
+
+.terms-red {
+    color: var(--red);
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .intro-component-signup {
+        width: 375px;
+        height: auto;
+        flex-direction: column;
+    }   
+
+    .intro-component-title {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .intro-component-text {
+        text-align: center;
+    }
+
+    .intro-component-signup-form-content {
+        padding: 25px;
+    }
+
+    .intro-component-signup-form-terms {
+        text-align: center;
+    }
+}

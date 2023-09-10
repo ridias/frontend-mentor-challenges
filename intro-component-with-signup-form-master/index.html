@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="intro-component-signup">
+    <div class="intro-component">
+      <div class="intro-component-title">
+        <p>
+          Learn to code by watching others
+        </p>
+      </div>
+      <div class="intro-component-text">
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+    </div>
+    <div class="intro-component-signup-form">
+      <div class="intro-component-signup-form-div">
+        <div><b>Try it free 7 days</b> then $20/mo. thereafter</div>
+      </div>
+      <div class="intro-component-signup-form-content">
+        <div class="intro-component-signup-form-field">
+          <div class="intro-component-signup-form-field-input">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+          </div>
+          <p class="field-error" id="fieldErrorFirstName">First name cannot be empty</p>  
+        </div>
+        <div class="intro-component-signup-form-field">
+          <div class="intro-component-signup-form-field-input">
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          </div>
+          <p class="field-error" id="fieldErrorLastName">Last name cannot be empty</p>  
+        </div>
+        <div class="intro-component-signup-form-field">
+          <div class="intro-component-signup-form-field-input">
+            <input type="email" name="emailval" id="emailval" placeholder="Email Address">
+          </div>
+          <p class="field-error" id="fieldErrorEmail">Looks like this is not an email</p>  
+        </div>
+        <div class="intro-component-signup-form-field">
+          <div class="intro-component-signup-form-field-input">
+            <input type="password" name="passwordval" id="passwordval" placeholder="Password">
+          </div>
+          <p class="field-error" id="fieldErrorPassword">Password cannot be empty</p>  
+        </div>
+        <button class="intro-component-signup-form-btn">
+          Claim your free trial
+        </button>
+        <div class="intro-component-signup-form-terms">
+          <p>
+            By clicking the button, you are agreeing to our <span class="terms-red">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
